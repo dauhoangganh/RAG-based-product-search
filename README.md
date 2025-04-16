@@ -1,5 +1,6 @@
 # Analog Assist
-This repository contains a GenAI-powered application built using **LangChain**  as the main framework and **Streamlit** for GUI development. 
+This is a RAG based genAI application that can retrieve relevant products from the databse that meet user"s requirements.
+This repository contains a GenAI-powered application built using **LangChain**  as the main framework and **Streamlit** for GUI development. The LLM model used is AZURE openAI model, but user can freely use their preferred model. Vector database used int his project is PineCone.
 
 ## Features
 
@@ -21,8 +22,9 @@ To run the app locally, follow these steps:
    ```bash
    pip install -r requirements.txt
    ```
-
-3. Run the app:
+3. Input your AZURE openAI key, AZURE embedding model API key, pinecone API key, pinecone index to .env file
+ 
+4. Run the app:
    ```bash
    streamlit run .\homepage.py
    ```
